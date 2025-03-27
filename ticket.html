@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/ticket.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="../src/assets/images/logo-full.svg" alt="Coding Conf 2025 Logo">
+    </div>
+  </header>
+  
+  <main class="container">
+    <section class="header-text">
+      <h1>Congratulations, <span id="name" class="name"></span>!<br>Your ticket is ready.</h1>
+      <h3>We've emailed your ticket to <span id="email" class="email"></span> and will send updates in the run up to the event.</h3>
+    </section>
+
+    <section class="ticket-section">
+      <div class="ticket-container">
+        <img src="../src/assets/images/pattern-ticket.svg" alt="Ticket pattern" class="ticket-pattern">
+        <div class="ticket-content">
+          <div class="ticket-header">
+            <h2 class="ticket-title">Coding Conf</h2>
+            <div class="ticket-id" id="ticket-id"></div>
+          </div>
+          <div class="ticket-date">Jan 31, 2025 / Austin, TX</div>
+          
+          <div class="ticket-user">
+            <img id="avatar-img" src="" alt="User avatar" class="ticket-avatar">
+            <div class="ticket-user-info">
+              <div class="user-name" id="ticket-name"></div>
+                <div class="github-info">
+                  <img src="../src/assets/images/icon-github.svg" alt="GitHub icon" class="github-icon">
+                  <span id="github" class="github-user"></span>
+                </div>
+            </div>
+            <div class="ticket-id" id="ticket-id"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/diegoperpetuo">@diegoperpetuo</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

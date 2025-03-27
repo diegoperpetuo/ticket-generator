@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/index.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <img src="../src/assets/images/logo-full.svg" alt="Coding Conf 2025 Logo">
+    </div>
+  </header>
+  
+  <main>
+    <section class="header-text">
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <h3>Secure your spot at next year's biggest coding conference.</h3>
+    </section>
+
+    <section class="form-contacts">
+      <form id="ticket-form">
+        <label for="upload-input">Upload your Avatar</label>
+        
+        <label class="upload-container" for="upload-input">
+          <div class="upload-content">
+            <img class="upload-icon" src="../src/assets/images/icon-upload.svg" alt="Upload icon">
+            <span>Drag and drop or click to upload</span>
+          </div>
+          <div class="image-controls" id="image-controls">
+            <div class="preview-wrapper">
+              <img id="preview-image" class="preview-image">
+            </div>
+            <div class="action-buttons">
+              <button class="change-btn"type="button">Change image</button>
+            <button class="remove-btn" type="button">Remove image</button>
+          </div>
+        </div>
+        <div class="upload-input">
+          <input type="file" id="upload-input" accept="image/png, image/jpeg" style="display: none;" required>
+        </div>
+      </label>
+        
+        <div class="upload-preview">  
+          <h5>
+            <img src="/src/assets/images/icon-info.svg" alt="Info icon">
+            <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+          </h5>
+        </div>
+
+          <div class="form-box">
+            <label class="form-label" for="name">Full Name</label>
+            <input class="input" type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-box">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="input" type="email" id="email" name="email" placeholder="example@email.com" required>
+          </div>
+          
+          <div class="form-box">
+            <label class="form-label" for="github">GitHub Username</label>
+            <input class="input" type="text" id="github" name="github" placeholder="@yourusername" required>
+          </div>
+
+        <button class="generate" id="submit" type="submit">Generate My Ticket</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/diegoperpetuo">@diegoperpetuo</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
